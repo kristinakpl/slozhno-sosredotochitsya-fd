@@ -4,18 +4,15 @@
 */
 :root {
   --accent-color: #ff0070;
-  --header-text-color: #dB00ff;
+  --header-text-color: #db00ff;
   --header-description-color: #000028;
-  --menu-text: #ff0070;
   --main-text-color: #f1b2ce;
   --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-dark.png);
-  --font-family: 'IBM Plex mono';
+  --font-family: "IBM Plex mono";
   --font-weight-bold: 700;
   --font-weight-normal: 400;
   --main-font-size: 18px;
   --line-height: 1.3;
-  --padding-mobile: 10px; 
-  
+  --padding-mobile: 10px;
 }
-
