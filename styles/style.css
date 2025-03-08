@@ -45,7 +45,7 @@
   justify-self: start;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825;
-  color: #db00ff;
+  color: var(--header-text-color);
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -84,7 +84,7 @@
 
 .header__theme-menu-button {
   max-inline-size: 70px;
-  color: var(--accent-color);
+  color: var(--section-title-color);
   line-height: 1;
   border: 1px solid transparent;
   padding: 2px 13px;
@@ -99,12 +99,12 @@
 
 .header__theme-menu-button:focus {
   border: transparent;
-  border-block-end: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--section-title-color);
 }
 
 .header__theme-menu-button_active {
   pointer-events: none;
-  border: 1px solid var(--accent-color);
+  border: 1px solid var(--section-title-color);
 }
 
 .decorated-zone::before {
@@ -114,8 +114,8 @@
   block-size: 25px;
   left: 10px;
   bottom: 10px;
-  border-block-end: 1px solid var(--accent-color);
-  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--section-title-color);
+  border-inline-start: 1px solid var(--section-title-color);
 }
 
 @media (min-width: 768px) {
@@ -132,8 +132,8 @@
   block-size: 25px;
   right: 10px;
   top: 10px;
-  border-block-start: 1px solid var(--accent-color);
-  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--section-title-color);
+  border-inline-end: 1px solid var(--section-title-color);
 }
 
 @media (min-width: 768px) {
@@ -231,7 +231,7 @@
   font-weight: var(--font-weight-bold);
   font-size: var(--main-font-size);
   line-height: var(--line-height);
-  color: var(--accent-color);
+  color: var(--section-title-color);
 }
 
 @media (min-width: 768px) {

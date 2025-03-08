@@ -10,15 +10,13 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --accent-color: #ff0070;
-  --header-text-color: #dB00ff;
+  --header-text-color: #db00ff;
   --header-description-color: #000028;
-  --menu-text: #ff0070;
+  --color-hover: rgb(255 0 112 / 0.4);
   --main-text-color: #f1b2ce;
+  --section-title-color: #ff0070;
+  --bg-color: #fff1f7;
   --bg-image: url(../images/cover-image-dark.png);
-  --font-family: 'IBM Plex mono';
-  --font-weight-bold: 700;
-  --font-weight-normal: 400;
-  --main-font-size: 18px;
 }
 
 .theme-dark .page {
