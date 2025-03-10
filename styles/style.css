@@ -2,7 +2,7 @@
 
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-  font-family: var(--font-family), serif;
+  font-family: var(--font-family), monospace;
   font-weight: var(--font-weight-normal);
   font-size: var(--main-font-size);
   background-image: var(--bg-image);
@@ -20,21 +20,15 @@
   align-items: center;
   padding: var(--padding-mobile);
   block-size: 100vh;
-  min-block-size: 668px;
 }
 
 @media (min-width: 768px) {
   .header {
     padding: var(--padding-desktop);
-    min-block-size: 1024px;
   }
 }
 
 @media (min-width: 1024px) {
-  .header {
-    padding: var(--padding-desktop);
-    min-block-size: 768px;
-  }
   .header__theme-menu {
     justify-self: center;
     align-self: start;
@@ -46,6 +40,9 @@
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   line-height: 0.825;
   color: var(--header-text-color);
+}
+
+.cover_title-header {
   text-shadow: 4px 4px 0 var(--accent-color);
 }
 
@@ -61,6 +58,7 @@
   line-height: 1.3;
   color: var(--header-description-color);
   background-color: var(--accent-color);
+  font-weight: var(--font-weight-bold);
 }
 
 @media (min-width: 768px) {
@@ -83,7 +81,6 @@
 }
 
 .header__theme-menu-button {
-  max-inline-size: 70px;
   color: var(--section-title-color);
   line-height: 1;
   border: 1px solid transparent;
@@ -98,12 +95,16 @@
 }
 
 .header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
   border: transparent;
   border-block-end: 1px solid var(--section-title-color);
 }
 
 .header__theme-menu-button_active {
-  pointer-events: none;
+  /*pointer-events: none;*/
   border: 1px solid var(--section-title-color);
 }
 
@@ -254,7 +255,7 @@
 
 .special-link {
   text-decoration: none;
-  text-shadow: 1.5px 1.5px var(--accent-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
 }
 
 .special-link:hover {
@@ -263,6 +264,10 @@
 }
 
 .special-link:focus {
+  outline: none;
+}
+
+.special-link:focus-visible {
   border: 1px solid var(--main-text-color);
 }
 
@@ -337,27 +342,22 @@
   justify-self: center;
   padding: var(--padding-mobile);
   block-size: 100vh;
-  min-block-size: 668px;
   margin-block-start: 30px;
+  width: 100%;
+}
+
+.cover_title-footer {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  justify-self: center;
 }
 
 @media (min-width: 768px) {
   .footer {
     padding: var(--padding-desktop);
-    min-block-size: 1024px;
-    min-inline-size: 768px;
     margin-block-start: 40px;
   }
 
   .cover_title-footer {
     font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
-    justify-self: center;
-  }
-}
-
-@media (min-width: 1024px) {
-  .footer {
-    min-block-size: 768px;
-    min-inline-size: 1024px;
   }
 }

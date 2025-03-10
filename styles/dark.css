@@ -15,14 +15,20 @@
   --color-hover: rgb(255 0 112 / 0.4);
   --main-text-color: #f1b2ce;
   --section-title-color: #ff0070;
-  --bg-color: #fff1f7;
+  --bg-color: #000028;
   --bg-image: url(../images/cover-image-dark.png);
+
+  .rec-element {
+    display: flex;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .theme-dark .rec-element {
+    display: none;
+  }
 }
 
 .theme-dark .page {
   /* Вам также нужно будет написать ряд подобных селекторов */
-}
-
-.theme-dark .rec-element {
-  display: flex;
 }
