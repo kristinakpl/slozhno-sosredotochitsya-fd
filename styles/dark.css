@@ -27,6 +27,17 @@
   .theme-dark .rec-element {
     display: none;
   }
+
+  :root {
+    --accent-color: #ff0070;
+    --header-text-color: #db00ff;
+    --header-description-color: #000028;
+    --color-hover: rgb(255 0 112 / 0.4);
+    --main-text-color: #f1b2ce;
+    --section-title-color: #ff0070;
+    --bg-color: #000028;
+    --bg-image: url(../images/cover-image-dark.png);
+  }
 }
 
 .theme-dark .page {
